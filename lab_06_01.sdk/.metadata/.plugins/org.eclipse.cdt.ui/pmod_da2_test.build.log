@@ -1,8 +1,8 @@
-03:22:29 **** Incremental Build of configuration Debug for project pmod_da2_test ****
+05:36:09 **** Incremental Build of configuration Debug for project pmod_da2_test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-03:22:29 Build Finished (took 571ms)
+05:36:10 Build Finished (took 538ms)
 
