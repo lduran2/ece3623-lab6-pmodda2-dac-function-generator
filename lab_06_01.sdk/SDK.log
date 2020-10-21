@@ -1,0 +1,6 @@
+20:37:18 INFO  : Registering command handlers for SDK TCF services
+20:37:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\Zynq_Book\lab_06_01\lab_06_01.sdk\temp_xsdb_launch_script.tcl
+20:37:27 INFO  : XSCT server has started successfully.
+20:37:28 INFO  : Successfully done setting XSCT server connection channel  
+20:37:28 INFO  : Successfully done setting SDK workspace  
+20:37:28 INFO  : Processing command line option -hwspec C:/Zynq_Book/lab_06_01/lab_06_01.sdk/zybo_with_pmodda2_wrapper.hdf.
