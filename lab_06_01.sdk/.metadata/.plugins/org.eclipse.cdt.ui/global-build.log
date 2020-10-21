@@ -420,3 +420,152 @@ arm-none-eabi-size pmod_da2_sinusoidal.elf  |tee "pmod_da2_sinusoidal.elf.size"
   19064	   1144	  22568	  42776	   a718	pmod_da2_sinusoidal.elf
 'Finished building: pmod_da2_sinusoidal.elf.size'
 ' '
+02:23:49 **** Auto Build of configuration Debug for project pmod_da2_sinusoidal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: pmod_da2_sinusoidal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/lib -o "pmod_da2_sinusoidal.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pmod_da2_sinusoidal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pmod_da2_sinusoidal.elf  |tee "pmod_da2_sinusoidal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19064	   1144	  22568	  42776	   a718	pmod_da2_sinusoidal.elf
+'Finished building: pmod_da2_sinusoidal.elf.size'
+' '
+03:01:04 **** Auto Build of configuration Debug for project pmod_da2_sinusoidal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:2: error: unknown type name 'xil_'
+  xil_
+  ^~~~
+../src/helloworld.c:81:2: error: conflicting types for 'init_platform'
+  init_platform();
+  ^~~~~~~~~~~~~
+In file included from ../src/helloworld.c:55:
+../src/platform.h:38:6: note: previous declaration of 'init_platform' was here
+ void init_platform();
+      ^~~~~~~~~~~~~
+../src/helloworld.c:77:6: warning: unused variable 'max_amp' [-Wunused-variable]
+  int max_amp = max_p1_sin >> 1; /* the max amplitude and DC offset */
+      ^~~~~~~
+../src/helloworld.c:74:6: warning: unused variable 'status' [-Wunused-variable]
+  int status; /* of the GPIO */
+      ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+03:01:13 **** Auto Build of configuration Debug for project pmod_da2_sinusoidal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:6: warning: unused variable 'max_amp' [-Wunused-variable]
+  int max_amp = max_p1_sin >> 1; /* the max amplitude and DC offset */
+      ^~~~~~~
+../src/helloworld.c:74:6: warning: unused variable 'status' [-Wunused-variable]
+  int status; /* of the GPIO */
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: pmod_da2_sinusoidal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/lib -o "pmod_da2_sinusoidal.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pmod_da2_sinusoidal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pmod_da2_sinusoidal.elf  |tee "pmod_da2_sinusoidal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29504	   1544	  23256	  54304	   d420	pmod_da2_sinusoidal.elf
+'Finished building: pmod_da2_sinusoidal.elf.size'
+' '
+03:04:41 **** Auto Build of configuration Debug for project pmod_da2_sinusoidal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:56: error: 'XSLT_SUCCESS' undeclared (first use in this function); did you mean 'XST_SUCCESS'?
+  if (XGpio_Initialize(&InpInst, INP_GPIO_DEVICE_ID) != XSLT_SUCCESS) {
+                                                        ^~~~~~~~~~~~
+                                                        XST_SUCCESS
+../src/helloworld.c:81:56: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:82:10: error: 'XSLT_FAILURE' undeclared (first use in this function); did you mean 'XST_FAILURE'?
+   return XSLT_FAILURE;
+          ^~~~~~~~~~~~
+          XST_FAILURE
+../src/helloworld.c:77:6: warning: unused variable 'max_amp' [-Wunused-variable]
+  int max_amp = max_p1_sin >> 1; /* the max amplitude and DC offset */
+      ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+03:04:59 **** Auto Build of configuration Debug for project pmod_da2_sinusoidal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:10: error: 'XSLT_FAILURE' undeclared (first use in this function); did you mean 'XST_FAILURE'?
+   return XSLT_FAILURE;
+          ^~~~~~~~~~~~
+          XST_FAILURE
+../src/helloworld.c:82:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:77:6: warning: unused variable 'max_amp' [-Wunused-variable]
+  int max_amp = max_p1_sin >> 1; /* the max amplitude and DC offset */
+      ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+03:05:02 **** Auto Build of configuration Debug for project pmod_da2_sinusoidal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:6: warning: unused variable 'max_amp' [-Wunused-variable]
+  int max_amp = max_p1_sin >> 1; /* the max amplitude and DC offset */
+      ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: pmod_da2_sinusoidal.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../pmod_da2_sinusoidal_bsp/ps7_cortexa9_0/lib -o "pmod_da2_sinusoidal.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: pmod_da2_sinusoidal.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size pmod_da2_sinusoidal.elf  |tee "pmod_da2_sinusoidal.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30712	   1560	  23272	  55544	   d8f8	pmod_da2_sinusoidal.elf
+'Finished building: pmod_da2_sinusoidal.elf.size'
+' '
+03:08:12 **** Incremental Build of configuration Debug for project pmod_da2_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:09:21 **** Incremental Build of configuration Debug for project pmod_da2_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+03:22:29 **** Incremental Build of configuration Debug for project pmod_da2_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
